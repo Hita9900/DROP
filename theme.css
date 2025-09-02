@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: 'Icons';
+    src: url('customicons.woff') format('woff');
+}
+   .demo-icon {
+    font-family: "Icons";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root{
+    --Primary-accent: #C8FF00;
+    --Secondary-accent: #FF1962;
+    --Primary-dark: #1E201D;
+    --secondary-dark: #262825;
+    --primary-white: #E6E8E1;
+}
+
+.bg-primary-dark{
+    background-color: var(--Primary-dark);
+    color: var(--primary-white);
+}
+
+.bg-secondary-dark{
+    background-color: var(--secondary-dark);
+    color: var(--primary-white);
+}
+
+.bg-primary-accent{
+    background-color: var(--Primary-accent);
+    color: var(--Primary-dark);
+}
+
+.text-dark{
+    color:var(--Primary-dark);
+}
+
+.text-light{
+    color: var(--primary-white);
+}
+
+.text-light-50{
+    color: var(--primary-white);
+    opacity: 50%;
+}
+
+
+.text-small{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.text-body{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-header2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button{
+    
+    border-bottom: 0.313rem solid #89AA13;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: var(--Primary-accent);
+    color: var(--Primary-dark);
+}
+.button:hover {
+  background: #89AA13;
+  border:none;
+  margin-top: 0.313rem;
+  transition: all;
+}
+
+/*.button:focus {
+  background: blue;
+  transition: all 1s ease;
+}
+
+/*{
+  
+  font-weight: <weight>;
+  font-style: normal;
+}*/
