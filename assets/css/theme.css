@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @font-face {
     font-family: 'Icons';
-    src: url('customicons.woff') format('woff');
+    src: url('assets/icons/customicons.woff') format('woff');
 }
-   .demo-icon {
+
+.demo-icon {
     font-family: "Icons";
     font-style: normal;
     font-weight: normal;
@@ -19,7 +21,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-:root{
+
+:root {
     --Primary-accent: #C8FF00;
     --Secondary-accent: #FF1962;
     --Primary-dark: #1E201D;
@@ -27,74 +30,103 @@
     --primary-white: #E6E8E1;
 }
 
-.bg-primary-dark{
+/*   background color presets   */
+.bg-primary-dark {
     background-color: var(--Primary-dark);
     color: var(--primary-white);
 }
 
-.bg-secondary-dark{
+.bg-secondary-dark {
     background-color: var(--secondary-dark);
     color: var(--primary-white);
 }
 
-.bg-primary-accent{
+.bg-light {
+    background-color: var(--primary-white);
+    color: var(--Primary-dark);
+}
+
+.bg-primary-accent {
     background-color: var(--Primary-accent);
     color: var(--Primary-dark);
 }
 
-.text-dark{
-    color:var(--Primary-dark);
+/*   text color presets   */
+.text-dark {
+    color: var(--Primary-dark);
 }
 
-.text-light{
+.text-dark-50 {
+    color: var(--Primary-dark);
+    opacity: 50%;
+}
+
+.text-light {
     color: var(--primary-white);
 }
 
-.text-light-50{
+.text-light-50 {
     color: var(--primary-white);
     opacity: 50%;
 }
 
+/*   typography presets   */
 
-.text-small{
+.text-small {
     font-size: 14px;
     font-weight: 300;
 }
 
-.text-body{
+.text-body {
     font-size: 16px;
     font-weight: 300;
 }
 
-.text-header2{
+.text-header2 {
     font-size: 20px;
     font-weight: 500;
 }
 
-.button{
-    
+/*   button styles   */
+
+.button {
+
     border-bottom: 0.313rem solid #89AA13;
     border-radius: 0.5rem;
-    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    padding: 0 1.25rem 0 1.25rem;
+    height: 3rem;
     font-size: 16px;
     font-weight: 300;
     background-color: var(--Primary-accent);
     color: var(--Primary-dark);
 }
+
 .button:hover {
-  background: #89AA13;
-  border:none;
-  margin-top: 0.313rem;
-  transition: all;
+    background: #89AA13;
+    border: none;
+    transition: all 50ms;
 }
 
-/*.button:focus {
-  background: blue;
-  transition: all 1s ease;
+
+
+/*   leaderboard table   */
+
+#leaderboard tbody tr td {
+    background-color: var(--secondary-dark);
 }
 
-/*{
-  
-  font-weight: <weight>;
-  font-style: normal;
-}*/
+#leaderboard tbody tr:first-child td:first-child {
+    border-top-left-radius: 1rem;
+}
+
+#leaderboard tbody tr:first-child td:last-child {
+    border-top-right-radius: 1rem;
+}
+
+#leaderboard tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 1rem;
+}
+
+#leaderboard tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 1rem;
+}

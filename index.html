@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html class="h-full">
-    <head>
-        <title>DROP: The challenge</title>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://unpkg.com/petite-vue" defer init></script>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="theme.css">
-        <link rel="manifest" href="/manifest.json">
-        </head>
-    <body class="flex min-h-full justify-center">
-        <div class="bg-primary-dark container px-5 pt-5 ">
-            <div>
-                <h2 class="text-header2 my-4">Daily Prompt</h2>
-                <div class="prompt py-7 px-5 text-center bg-no-repeat rounded-xl bg-cover bg-center">
-                    <p class="text-small text-light-50">Day 21</p>
-                    <p class="text-lg mt-2 mb-3">Drop a song that has exactly 6 letters for the title</p>
-                    <a href="#"><button class="button"><i class="demo-icon">&#xe80a;</i>&nbsp;Drop your Song</button> </a>
-                    
-                </div>
+
+<head>
+    <title>DROP: The challenge</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+    <script src="assets/scripts/navbar.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+
+<body class="flex min-h-full justify-center">
+    <div class="bg-primary-dark container px-5 pt-5 ">
+        <!--Prompt section-->
+        <div class="mb-10">
+            <h2 class="text-header2 my-4">Daily Prompt</h2>
+            <div class="glass-bg py-7 px-5 text-center bg-no-repeat rounded-xl bg-cover bg-center">
+                <p class="text-small text-light-50">Day 21</p>
+                <p class="text-lg mt-2 mb-3">Drop a song that has exactly 6 letters for the title</p>
+                <a href="#"><button class="button"><i class="demo-icon">&#xe80a;</i>&nbsp;Drop your Song</button> </a>
             </div>
         </div>
-    </body>
+        <!--leaderboard-->
+        <div>
+            <div class="mb-8">
+                <h2 class="text-header2">Leaderboard</h2>
+                <p class="text-small text-light-50">Week 2 (days 7-14)</p>
+            </div>
+            <div>
+                <table class="min-w-full" id="leaderboard">
+                    <thead>
+                        <tr class="text-small">
+                            <th class="font-light px-4">#</th>
+                            <th class="font-light"> </th>
+                            <th class="font-light pl-4 text-left">Name</th>
+                            <th class="font-light">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-body">
+                        <tr class="text-center h-16">
+                            <td class="px-4">1</td>
+                            <td class="w-10"><img src="assets/Profiles/p4.png"></td>
+                            <td class="pl-4 text-left">Shlongma</td>
+                            <td>34</td>
+                        </tr>
+                        <tr class="text-center h-16">
+                            <td class="px-4">2</td>
+                            <td class="w-10"><img src="assets/Profiles/p5.png"></td>
+                            <td class="pl-4 text-left">Gloober</td>
+                            <td>34</td>
+                        </tr>
+                        <tr class="text-center h-16">
+                            <td class="px-4">3</td>
+                            <td class="w-10"><img src="assets/Profiles/p6.png"></td>
+                            <td class="pl-4 text-left">crantzia</td>
+                            <td>34</td>
+                        </tr>
+                        <tr class="text-center h-16">
+                            <td class="px-4">4</td>
+                            <td class="w-10"><img src="assets/Profiles/p7.png"></td>
+                            <td class="pl-4 text-left">Mr. poopybutthole</td>
+                            <td>34</td>
+                        </tr>
+                        <tr class="text-center h-16">
+                            <td class="px-4">5</td>
+                            <td class="w-10"><img src="assets/Profiles/p8.png"></td>
+                            <td class="pl-4 text-left">Meeseeks</td>
+                            <td>34</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--navbar-->
+        <div id="navbar-container"></div>
+
+        <!--scroll friendly space-->
+        <div class="h-32"></div>
+    </div>
+</body>
+
 </html>
