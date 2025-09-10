@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Icons';
-    src: url('assets/icons/customicons.woff') format('woff');
+    src: url('../icons/customicons.woff') format('woff');
 }
 
 .demo-icon {
