@@ -7,5 +7,5 @@ document.head.innerHTML +=`
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
-    <link rel="manifest" href="/manifest.json"></link>
+    <link rel="manifest" href="manifest.json"></link>
     `;
