@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="h-full">
+
+<head>
+    <title>DROP: The challenge</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <link rel="manifest" href="/manifest.json">
+    </link>
+</head>
+
+<body class="flex min-h-full justify-center">
+    <div class="bg-primary-dark container px-5 pt-5 ">
+
+        <!--top bar-->
+        <div class="flex justify-between items-center mb-10">
+            <a href="index.html">
+                <img src="/assets/Images/Logo.png">
+            </a>
+            <a>
+                <div>
+                    <img src="/assets/Images/burger.png">
+                </div>
+            </a>
+        </div>
+
+        <!--log in form-->
+        <div class="mb-10 justify-center flex">
+            <div class="glass-bg py-8 px-6 bg-no-repeat rounded-xl bg-cover bg-center">
+                <div class="login">
+                    <p class="text-small text-light-50">Log in to your account</p>
+                    <div class="auth-form">
+                        <h2 class="text-header2 mb-10">Welcome back</h2>
+                        <div class="text-small text-fuchsia" id="prank-text"></div>
+                        <input class="p-3 text-body bg-light w-full rounded-lg mb-4" type="email" id="login-email" placeholder="Email">
+                        <input class="p-3 text-body bg-light w-full rounded-lg mb-10" type="password" id="login-password" placeholder="Password">
+                        <button class="button w-full" onclick="prank()">Login</button>
+                        <p class="text-small mt-2 text-center">Don’t have an account? <strong class="text-fuchsia">Sign up</strong> here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Signup Form 
+         <div class="hidden">
+        <div class="auth-form">
+            <h2>Sign Up</h2>
+            <input type="email" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button onclick="signup()">Sign Up</button>
+        </div>
+        </div>
+        <!--navbar-->
+        <div id="navbar-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/assets/scripts/app.js"></script>
+</body>
+
+</html>

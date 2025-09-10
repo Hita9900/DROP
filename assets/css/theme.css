@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Icons';
-    src: url('assets/icons/customicons.woff') format('woff');
+    src: url('/assets/icons/customicons.woff') format('woff');
 }
 
 .demo-icon {
@@ -24,7 +24,7 @@
 
 :root {
     --Primary-accent: #C8FF00;
-    --Secondary-accent: #FF1962;
+    --Secondary-accent: #FF19E8;
     --Primary-dark: #1E201D;
     --secondary-dark: #262825;
     --primary-white: #E6E8E1;
@@ -68,6 +68,10 @@
 .text-light-50 {
     color: var(--primary-white);
     opacity: 50%;
+}
+
+.text-fuchsia{
+    color: var(--Secondary-accent);
 }
 
 /*   typography presets   */

@@ -1,0 +1,11 @@
+document.head.innerHTML +=`
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+    <script src="assets/scripts/navbar.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <link rel="manifest" href="/manifest.json"></link>
+    `;

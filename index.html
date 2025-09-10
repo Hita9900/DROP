@@ -6,20 +6,32 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/petite-vue" defer init></script>
     <script src="assets/scripts/navbar.js"></script>
+    <script src="https://unpkg.com/petite-vue" defer init></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
     <link rel="manifest" href="/manifest.json">
-
+    </link>
 </head>
 
 <body class="flex min-h-full justify-center">
     <div class="bg-primary-dark container px-5 pt-5 ">
+        <!--top bar-->
+        <div class="flex justify-between items-center mb-10">
+            <a href="login.html">
+                <div class="flex items-center">
+                    <img class="w-10" src="/assets/Profiles/p4.png">
+                    <p class="pl-4">shlomska</p>
+                </div>
+            </a>
+            <div>
+                <img src="/assets/Images/burger.png">
+            </div>
+        </div>
         <!--Prompt section-->
         <div class="mb-10">
-            <h2 class="text-header2 my-4">Daily Prompt</h2>
+            <h2 class="text-header2 mb-4">Daily Prompt</h2>
             <div class="glass-bg py-7 px-5 text-center bg-no-repeat rounded-xl bg-cover bg-center">
                 <p class="text-small text-light-50">Day 21</p>
                 <p class="text-lg mt-2 mb-3">Drop a song that has exactly 6 letters for the title</p>
@@ -82,6 +94,7 @@
 
         <!--scroll friendly space-->
         <div class="h-32"></div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     </div>
 </body>
 
